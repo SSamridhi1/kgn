@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&family=Vujahday+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Seaweed+Script&family=Vujahday+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Rye&family=Seaweed+Script&family=Vujahday+Script&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+    position: relative;
+    padding: 0px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .content h1,
+h3 {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 20px;
+    padding: 3px;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    width: 80px;
+    background-blend-mode: normal;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 2vw;
+    font-family: "Poppins", sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2vh;
+    
+}
+
+.content h1{
+    font-size: 6vh;
+    font-weight: 600;
+    align-items: center;
+    transition: 0.3s;
+    color: white;
+}
+.content h3{
+    font-size: 6vh;
+    font-weight: 600;
+    align-items: center;
+    transition: 0.3s;
+    color: rgb(204, 7, 7);
+}
+.content h1:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.content h3:hover {
+    -webkit-text-stroke: 2px #fc0404;
+    color: transparent;
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 21px;
+    color: #fff;
+    padding: 14px 70px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-family: "Nerko One", cursive;
+}
+
+.content a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.backvideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .backvideo {
+        width: auto;
+        height: 100%;
+    }
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .backvideo {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+.legacy {
+    display: flex;
+    justify-content: space-around;
+    background-image: url(ASSET/I/backiee-265661-landscape.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.legacytext {
+    padding: 5vw;
+}
+
+.legacytext h2 {
+    text-shadow: none;
+    text-align: center;
+    font-family: "Vujahday Script", cursive;
+    font-weight: 900;
+    font-size: 35px;
+    color: silver;
+}
+
+.legacytext h4 {
+    color: silver;
+    margin-top: 22px;
+    font-family: "Vujahday Script", cursive;
+    font-weight: 400;
+}
+
+.legacyimg img {
+    position: relative;
+    height: 100px;
+    top: 30px;
+}
+
+
+.card {
+    background-color: rgb(212, 208, 208);
+    width: 198px;
+    border-radius: 7px;
+    padding: 0 0 34px 0;
+    margin: 4px;
+    border: 2px solid rgb(82, 81, 81);
+}
+
+.image {
+    padding: 5px;
+}
+
+.image img {
+    border-radius: 7px;
+}
+
+.content {
+    padding: 7px 13px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content p {
+    font-size: 12px;
+    color: black;
+}
+
+.capsules {
+    padding: 0 28px 0 14px;
+}
+
+.capsules span {
+    border: 1px solid gray;
+    padding: 0px 6px;
+    border-radius: 7px;
+    font-size: 8px;
+    font-family: 'Baloo Bhai 2', sans-serif;
+
+}
+
+.button {
+    text-align: center;
+}
+
+.button button {
+    padding: 7px 15px;
+    border-radius: 15px;
+    background-color: grey;
+    color: rgb(246, 246, 247);
+    font-size: 10px;
+    margin-top: 7px;
+    border: none;
+    font-weight: bold;
+}
+
+.button button:hover {
+    background-color: rgb(194, 225, 246);
+    color: rgb(10, 136, 214);
+}
+
+.service {
+    display: grid;
+    background-image: url(ASSET/I/cast-iron-dumbbell-weights.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+}
+.trainer{
+    background-image: url(ASSET/I/—Pngtree—an\ old\ gym\ setting\ with_2667256.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.tcard{
+    width: 198px;
+    height: 355px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid #5f5b5b;
+    position: relative;
+
+}
+.tcard-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+
+}
+.tcard-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+    background-color: #5f5b5b94;
+}
+.tcard-title{
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 900;
+}
+.tcard-sub-title{
+      text-transform: capitalize;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 25px;
+      color: #fff;
+}
+.tcard:hover .tcard-body{
+    right: 0;
+}
+.tcard:hover .tcard-img{
+    filter: blur(3px);
+}
+.franchise {
+    width: 100%;
+    height: 30vh;
+    background-image: url(ASSET/I/—Pngtree—an\ old\ gym\ setting\ with_2667256.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.franchise a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 15px;
+    border: 2px solid black;
+    padding: 4px;
+    border-radius: 5px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+
+}
+.franchise h3{
+    color: crimson;
+}
+.franchise h4{
+    color: white;
+}
+.franchise img {
+    size: 15px;
+}
